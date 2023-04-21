@@ -1,4 +1,4 @@
-hackerrank1-js.txt
+// hackerrank1-js.txt
 
 // Q1 - 1. Identifying Triangles
 // Determine if three values form the sides of a triangle.
@@ -164,7 +164,7 @@ hackerrank1-js.txt
 // }
 // console.log(result);
 
-hackerrank2-js.txt
+// hackerrank2-js.txt
 
 // 1. Compliance Priorities
 
@@ -271,7 +271,7 @@ hackerrank2-js.txt
 // }
 // console.log(test(arr))
 
-hackerrank3-js
+// hackerrank3-js
 
 // 1. Picking Tickets
 // Find the largest number of ticket prices that cover an unbroken range of integers.
@@ -622,330 +622,330 @@ hackerrank3-js
 
 // Test Codility
 
-Question 01:
+// Question 01:
 
-There are N empty glasses with a capacity of 1, 2, ..., N liters (there is exactly one glass of each unique capacity). 
-You want to pour exactly K liters of water into glasses. Each glass may be either full or empty (a glass cannot be partially filled). 
-What is the minimum number of glasses that you need to contain K liters of water?
+// There are N empty glasses with a capacity of 1, 2, ..., N liters (there is exactly one glass of each unique capacity). 
+// You want to pour exactly K liters of water into glasses. Each glass may be either full or empty (a glass cannot be partially filled). 
+// What is the minimum number of glasses that you need to contain K liters of water?
 
-Write a function:
-function solution(N, K);
-that, given two integers N and K, returns the minimum number of glasses that are needed to contain exactly K liters of water. If it is not possible to pour exactly K liters of water into glasses then the function should return −1.
-Examples:
-1. Given N = 5 and K = 8, the function should return 2. There are five glasses of capacity 1, 2, 3, 4 and 5. You can use two glasses with capacity 3 and 5 to hold 8 liters of water.
-2. Given N = 4 and K = 10, the function should return 4. You must use all the glasses to contain 10 liters of water.
-3. Given N = 1 and K = 2, the function should return −1. There is only one glass with capacity 1, so you cannot pour 2 liters of water.
-4. Given N = 10 and K = 5, the function should return 1. You can use the glass with capacity 5.
-Write an efficient algorithm for the following assumptions:
-N is an integer within the range [1..1,000,000];
-K is an integer within the range [1..1,000,000,000].
+// Write a function:
+// function solution(N, K);
+// that, given two integers N and K, returns the minimum number of glasses that are needed to contain exactly K liters of water. If it is not possible to pour exactly K liters of water into glasses then the function should return −1.
+// Examples:
+// 1. Given N = 5 and K = 8, the function should return 2. There are five glasses of capacity 1, 2, 3, 4 and 5. You can use two glasses with capacity 3 and 5 to hold 8 liters of water.
+// 2. Given N = 4 and K = 10, the function should return 4. You must use all the glasses to contain 10 liters of water.
+// 3. Given N = 1 and K = 2, the function should return −1. There is only one glass with capacity 1, so you cannot pour 2 liters of water.
+// 4. Given N = 10 and K = 5, the function should return 1. You can use the glass with capacity 5.
+// Write an efficient algorithm for the following assumptions:
+// N is an integer within the range [1..1,000,000];
+// K is an integer within the range [1..1,000,000,000].
 
 
 
-Question 02:
+// Question 02:
 
-You are given a string S containing lowercase English letters. 
-Your task is to calculate the minimum number of letters that need to be removed in order to make it possible to build a palindrome from the remaining letters.
-When building the palindrome, you can rearrange the remaining letters in any way.</p>
+// You are given a string S containing lowercase English letters. 
+// Your task is to calculate the minimum number of letters that need to be removed in order to make it possible to build a palindrome from the remaining letters.
+// When building the palindrome, you can rearrange the remaining letters in any way.</p>
 
-A palindrome is a string that reads the same both forwards and backwards.
-Some examples of palindromes are: "kayak", "radar", "mom".
-Write a function:
-function solution(S);
-which, given a string of length N, returns the minimum number of letters that need to be removed.
-Examples:
-1. Given S = "ervervige", your function should return 2. After removing the letter "g" and one "e", we may create a word "reviver", which is a palindrome.
-2. Given S = "aaabab", your function should return 0. We may create a word "aabbaa", which is a palindrome and uses all of the letters.
-3. Given S = "x", your function should return 0. String "x" is a palindrome itself, so we do not have to delete any letter.
-Write an efficient algorithm for the following assumptions:
-N is an integer within the range [1..200,000]
-S contains only lowercase English letters.
+// A palindrome is a string that reads the same both forwards and backwards.
+// Some examples of palindromes are: "kayak", "radar", "mom".
+// Write a function:
+// function solution(S);
+// which, given a string of length N, returns the minimum number of letters that need to be removed.
+// Examples:
+// 1. Given S = "ervervige", your function should return 2. After removing the letter "g" and one "e", we may create a word "reviver", which is a palindrome.
+// 2. Given S = "aaabab", your function should return 0. We may create a word "aabbaa", which is a palindrome and uses all of the letters.
+// 3. Given S = "x", your function should return 0. String "x" is a palindrome itself, so we do not have to delete any letter.
+// Write an efficient algorithm for the following assumptions:
+// N is an integer within the range [1..200,000]
+// S contains only lowercase English letters.
 
-// Test Amazon:
+// // Test Amazon:
 
-You are inside question view of Amazon Transaction Logs (example question)
+// You are inside question view of Amazon Transaction Logs (example question)
 
-1. Amazon Transaction Logs (example question)
-Your Amazonian team is responsible for maintaining a monetary transaction service. The transactions are tracked in a log file.
+// 1. Amazon Transaction Logs (example question)
+// Your Amazonian team is responsible for maintaining a monetary transaction service. The transactions are tracked in a log file.
 
-A log file is provided as a string array where each entry represents a transaction to service. Each transaction consists of:
+// A log file is provided as a string array where each entry represents a transaction to service. Each transaction consists of:
 
-sender_user_id:  Unique identifier for the user that initiated the transaction.  It consists of only digits with at most 9 digits.
-recipient_user_id:  Unique identifier for the user that is receiving the transaction.  It consists of only digits with at most 9 digits.
-amount_of_transaction:  The amount of the transaction.  It consists of only digits with at most 9 digits.
-The values are separated by a space. For example, "sender_user_id recipient_user_id amount_of_transaction".
-
- 
-
-Users that perform an excessive amount of transactions might be abusing the service so you have been tasked to identify the users that have a number of transactions over a threshold. The list of user ids should be ordered in ascending numeric value.
-
- 
-Example
-
-logs = ["88 99 200", "88 99 300", "99 32 100", " 12 12 15"]
-
-threshold = 2
+// sender_user_id:  Unique identifier for the user that initiated the transaction.  It consists of only digits with at most 9 digits.
+// recipient_user_id:  Unique identifier for the user that is receiving the transaction.  It consists of only digits with at most 9 digits.
+// amount_of_transaction:  The amount of the transaction.  It consists of only digits with at most 9 digits.
+// The values are separated by a space. For example, "sender_user_id recipient_user_id amount_of_transaction".
 
  
 
-The transactions count for each user, regardless of role are:
+// Users that perform an excessive amount of transactions might be abusing the service so you have been tasked to identify the users that have a number of transactions over a threshold. The list of user ids should be ordered in ascending numeric value.
 
-ID     Transactions
---     ------------
-99     3
-88     2
-12     1
-32     1
-There are two users with at least threshold = 2 transactions: 99 and 88.  In ascending order, the return array is ['88', '99'].
+ 
+// Example
+
+// logs = ["88 99 200", "88 99 300", "99 32 100", " 12 12 15"]
+
+// threshold = 2
 
  
 
-Note:  In the last log entry, user 12 was on both sides of the transaction. This counts as only 1 transaction for user 12.
+// The transactions count for each user, regardless of role are:
+
+// ID     Transactions
+// --     ------------
+// 99     3
+// 88     2
+// 12     1
+// 32     1
+// There are two users with at least threshold = 2 transactions: 99 and 88.  In ascending order, the return array is ['88', '99'].
 
  
 
-Function Description 
-
-Complete the function processLogs in the editor below.
+// Note:  In the last log entry, user 12 was on both sides of the transaction. This counts as only 1 transaction for user 12.
 
  
 
-The function has the following parameter(s):
+// Function Description 
 
-    string logs[n]: each logs[i] denotes the ith entry in the logs
-
-    int threshold: the minimum number of transactions that a user must have to be included in the result
-
-Returns:
-
-    string[]: an array of user id's as strings, sorted ascending by numeric value
+// Complete the function processLogs in the editor below.
 
  
 
-Constraints
+// The function has the following parameter(s):
 
-1 ≤ n ≤ 105
-1 ≤ threshold ≤ n
-The sender_user_id, recipient_user_id and amount_of_transaction contain only characters in the range ascii['0'-'9'].
+//     string logs[n]: each logs[i] denotes the ith entry in the logs
 
-The sender_user_id, recipient_user_id and amount_of_transaction start with a non-zero digit.
+//     int threshold: the minimum number of transactions that a user must have to be included in the result
 
-0 < length of sender_user_id, recipient_user_id, amount_of_transaction ≤ 9.
-The result will contain at least one element.
+// Returns:
 
-Input Format Format for Custom Testing
-Sample Case 0
-Sample Case 1
-Info
-JavaScript (Node.js)
-Autocomplete Ready
-
-
-
-
-More
-126272829303132333435363738394041
-'use strict';
-
-const fs = require('fs');
-
-process.stdin.resume();
-process.stdin.setEncoding('utf-8');
-
-let inputString = '';
-let currentLine = 0;
-
-process.stdin.on('data', function(inputStdin) {
-    inputString += inputStdin;
-});
-
-process.stdin.on('end', function() {
-    inputString = inputString.split('\n');
-
-    main();
-});
-
-function readLine() {
-    return inputString[currentLine++];
-}
-
-
-
-/*
- * Complete the 'processLogs' function below.
- *
- * The function is expected to return a STRING_ARRAY.
- * The function accepts following parameters:
- *  1. STRING_ARRAY logs
- *  2. INTEGER threshold
- */
-
-Line: 26 Col: 1
-
-Test Results
-
-Custom Input
-
-Run Code
-
-Run Tests
-
-Submit
-callbackfn: (value: T, index: number, array: readonly T[]) => U, A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array., Calls a defined callback function on each element of an array, and returns an array that contains the results., hint
-
-
-
-
-
-
-
-2. Items in Containers (example question)
-Amazon would like to know how much inventory exists in their closed inventory compartments. Given a string s consisting of items as "*" and closed compartments as an open and close "|", an array of starting indices startIndices, and an array of ending indices endIndices, determine the number of items in closed compartments within the substring between the two indices, inclusive.
-
-An item is represented as an asterisk ('*' = ascii decimal 42)
-A compartment is represented as a pair of pipes that may or may not have items between them ('|' = ascii decimal 124).
- 
-
-Example
-
-s = '|**|*|*'
-
-startIndices = [1, 1]
-
-endIndices = [5, 6]
+//     string[]: an array of user id's as strings, sorted ascending by numeric value
 
  
 
-The string has a total of 2 closed compartments, one with 2 items and one with 1 item. For the first pair of indices, (1, 5), the substring is '|**|*'. There are 2 items in a compartment.
+// Constraints
 
-For the second pair of indices, (1, 6), the substring is '|**|*|' and there are 2 + 1 = 3 items in compartments.
+// 1 ≤ n ≤ 105
+// 1 ≤ threshold ≤ n
+// The sender_user_id, recipient_user_id and amount_of_transaction contain only characters in the range ascii['0'-'9'].
 
-Both of the answers are returned in an array,  [2, 3].
+// The sender_user_id, recipient_user_id and amount_of_transaction start with a non-zero digit.
+
+// 0 < length of sender_user_id, recipient_user_id, amount_of_transaction ≤ 9.
+// The result will contain at least one element.
+
+// Input Format Format for Custom Testing
+// Sample Case 0
+// Sample Case 1
+// Info
+// JavaScript (Node.js)
+// Autocomplete Ready
+
+
+
+
+// More
+// 126272829303132333435363738394041
+// 'use strict';
+
+// const fs = require('fs');
+
+// process.stdin.resume();
+// process.stdin.setEncoding('utf-8');
+
+// let inputString = '';
+// let currentLine = 0;
+
+// process.stdin.on('data', function(inputStdin) {
+//     inputString += inputStdin;
+// });
+
+// process.stdin.on('end', function() {
+//     inputString = inputString.split('\n');
+
+//     main();
+// });
+
+// function readLine() {
+//     return inputString[currentLine++];
+// }
+
+
+
+// /*
+//  * Complete the 'processLogs' function below.
+//  *
+//  * The function is expected to return a STRING_ARRAY.
+//  * The function accepts following parameters:
+//  *  1. STRING_ARRAY logs
+//  *  2. INTEGER threshold
+//  */
+
+// Line: 26 Col: 1
+
+// Test Results
+
+// Custom Input
+
+// Run Code
+
+// Run Tests
+
+// Submit
+// callbackfn: (value: T, index: number, array: readonly T[]) => U, A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array., Calls a defined callback function on each element of an array, and returns an array that contains the results., hint
+
+
+
+
+
+
+
+// 2. Items in Containers (example question)
+// Amazon would like to know how much inventory exists in their closed inventory compartments. Given a string s consisting of items as "*" and closed compartments as an open and close "|", an array of starting indices startIndices, and an array of ending indices endIndices, determine the number of items in closed compartments within the substring between the two indices, inclusive.
+
+// An item is represented as an asterisk ('*' = ascii decimal 42)
+// A compartment is represented as a pair of pipes that may or may not have items between them ('|' = ascii decimal 124).
+ 
+
+// Example
+
+// s = '|**|*|*'
+
+// startIndices = [1, 1]
+
+// endIndices = [5, 6]
 
  
 
-Function Description . 
+// The string has a total of 2 closed compartments, one with 2 items and one with 1 item. For the first pair of indices, (1, 5), the substring is '|**|*'. There are 2 items in a compartment.
 
-Complete the numberOfItems function in the editor below. The function must return an integer array that contains the results for each of the startIndices[i] and endIndices[i] pairs.
+// For the second pair of indices, (1, 6), the substring is '|**|*|' and there are 2 + 1 = 3 items in compartments.
 
- 
-
-numberOfItems has three parameters:
-
-  -  s: A string to evaluate
-
-  -  startIndices: An integer array, the starting indices. 
-
-  -  endIndices: An integer array, the ending indices. 
+// Both of the answers are returned in an array,  [2, 3].
 
  
 
-Constraints
+// Function Description . 
 
-1 ≤ m, n ≤ 105
-1 ≤ startIndices[i]  ≤ endIndices[i] ≤ n
-Each character of s is either '*' or '|'
-Input Format For Custom Testing
-The first line contains a string, s.
-
-The next line contains an integer, n, the number of elements in startIndices.
-
-Each line i of the n subsequent lines (where 1 ≤ i ≤ n) contains an integer, startIndices[i].
-
-The next line repeats the integer, n, the number of elements in endIndices.
-
-Each line i of the n subsequent lines (where 1 ≤ i ≤ n) contains an integer, endIndices[i].
-
-Sample Case 0
-Sample Input For Custom Testing
-
-STDIN         Function 
------         --------
-*|*|      →   s = "*|*|"
-1         →   startIndices[] size n = 1
-1         →   startIndices = 1
-1         →   endIndices[] size n = 1
-3         →   endIndices = 3
-Sample Output
-
-0
-Explanation
-
-s = *|*|
-
-n = 1
-
-startIndices = [1]
-
-n = 1
-
-startIndices = [3]
+// Complete the numberOfItems function in the editor below. The function must return an integer array that contains the results for each of the startIndices[i] and endIndices[i] pairs.
 
  
 
-The substring from index = 1 to index = 3 is '*|*'. There is no compartments in this string.
+// numberOfItems has three parameters:
 
-Sample Case 1
-Sample Input For Custom Testing
+//   -  s: A string to evaluate
 
-STDIN         Function
------         --------
-*|*|*|    →   s = "*|*|*|"
-1         →   startIndices[] size n = 1 
-1         →   startIndices = 1
-1         →   endIndices[] size n = 1
-6         →   endIndices = 6
-Sample Output
+//   -  startIndices: An integer array, the starting indices. 
 
-2
-Explanation
-
-s = '*|*|*|'
-
-n = 1
-
-startIndices = [1]
-
-n = 1
-
-endIndices = [6]
+//   -  endIndices: An integer array, the ending indices. 
 
  
 
-The string from index = 1 to index = 6 is '*|*|*|'. There are two compartments in this string at (index = 2, index = 4) and (index = 4, index = 6). There are 2 items between these compartments.
+// Constraints
 
-Info
-JavaScript (Node.js)
-Autocomplete Ready
+// 1 ≤ m, n ≤ 105
+// 1 ≤ startIndices[i]  ≤ endIndices[i] ≤ n
+// Each character of s is either '*' or '|'
+// Input Format For Custom Testing
+// The first line contains a string, s.
+
+// The next line contains an integer, n, the number of elements in startIndices.
+
+// Each line i of the n subsequent lines (where 1 ≤ i ≤ n) contains an integer, startIndices[i].
+
+// The next line repeats the integer, n, the number of elements in endIndices.
+
+// Each line i of the n subsequent lines (where 1 ≤ i ≤ n) contains an integer, endIndices[i].
+
+// Sample Case 0
+// Sample Input For Custom Testing
+
+// STDIN         Function 
+// -----         --------
+// *|*|      →   s = "*|*|"
+// 1         →   startIndices[] size n = 1
+// 1         →   startIndices = 1
+// 1         →   endIndices[] size n = 1
+// 3         →   endIndices = 3
+// Sample Output
+
+// 0
+// Explanation
+
+// s = *|*|
+
+// n = 1
+
+// startIndices = [1]
+
+// n = 1
+
+// startIndices = [3]
+
+ 
+
+// The substring from index = 1 to index = 3 is '*|*'. There is no compartments in this string.
+
+// Sample Case 1
+// Sample Input For Custom Testing
+
+// STDIN         Function
+// -----         --------
+// *|*|*|    →   s = "*|*|*|"
+// 1         →   startIndices[] size n = 1 
+// 1         →   startIndices = 1
+// 1         →   endIndices[] size n = 1
+// 6         →   endIndices = 6
+// Sample Output
+
+// 2
+// Explanation
+
+// s = '*|*|*|'
+
+// n = 1
+
+// startIndices = [1]
+
+// n = 1
+
+// endIndices = [6]
+
+ 
+
+// The string from index = 1 to index = 6 is '*|*|*|'. There are two compartments in this string at (index = 2, index = 4) and (index = 4, index = 6). There are 2 items between these compartments.
+
+// Info
+// JavaScript (Node.js)
+// Autocomplete Ready
 
 
 
 
-More
-12627282930313233343536373839404142
-'use strict';
+// More
+// 12627282930313233343536373839404142
+// 'use strict';
 
-const fs = require('fs');
+// const fs = require('fs');
 
-process.stdin.resume();
-process.stdin.setEncoding('utf-8');
+// process.stdin.resume();
+// process.stdin.setEncoding('utf-8');
 
-let inputString = '';
-let currentLine = 0;
+// let inputString = '';
+// let currentLine = 0;
 
-process.stdin.on('data', function(inputStdin) {
-    inputString += inputStdin;
-});
+// process.stdin.on('data', function(inputStdin) {
+//     inputString += inputStdin;
+// });
 
-process.stdin.on('end', function() {
-    inputString = inputString.split('\n');
+// process.stdin.on('end', function() {
+//     inputString = inputString.split('\n');
 
-    main();
-});
+//     main();
+// });
 
-function readLine() {
-    return inputString[currentLine++];
-}
+// function readLine() {
+//     return inputString[currentLine++];
+// }
 
 
 
@@ -970,4 +970,5 @@ Run Tests
 
 Submit
 callbackfn: (value: T, index: number, array: readonly T[]) => U, A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array., Calls a defined callback function on each element of an array, and returns an array that contains the results., hint
+*/
 

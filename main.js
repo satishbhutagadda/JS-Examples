@@ -1,12 +1,20 @@
-
 // "use strict";
 
 (function() {
 
-    // Promise.resolve('message').then((m) => console.log(m))
-    // console.log('m')
+// ***************************************// End //************************************** //
+// Problem
+// Swapping two variables without using 3rd variable
 
-// Problem - Swap two variables without using 3rd variable
+let a = 10;
+let b = 15;
+
+// Answer
+a = a+b
+b = a - b;
+a = a - b;
+// console.log(a, b);
+
 let swapA = 10;
 let swapB = 6;
 // This is one way
@@ -96,7 +104,7 @@ function _compareObj(a, b) {
 function mulFunction (x) {
     return function (y) { // anonymous function
         return function (z) { // anonymous function
-        return x * y * z;
+            return x * y * z;
         };
     };
 }
@@ -111,8 +119,8 @@ function mulFunction (x) {
 // addSix(21); // returns 27
 
 // Answer
-function createBase(baseValue){
-    return function(innerValue){
+function createBase(baseValue) {
+    return function(innerValue) {
         console.log(baseValue+innerValue);
     }
 }
@@ -205,21 +213,22 @@ function counter(defaultValue){
 
 // ***************************************// End //************************************** //
 // Problem
-// Check repeated item and log how many times it's got repeated
+// Write a function that returns most repeated number in an Array.
 
 // Answer
-const repeatedArray = [1,2,3,5,6,7,2,6,3, 3, 3];
+const repeatedNumbers = [1,2,3,5,6,7,2,6,3, 3, 3];
 
-function logRepeats(srcArray){
-    const outputObj = srcArray.reduce((accumulator, currentVal) => {
-        accumulator[currentVal.toString()] = accumulator.hasOwnProperty(currentVal) ? ++accumulator[currentVal] : accumulator[currentVal.toString()] = 1;
+function logMostRepeatedChar(arr) {
+    const repeatedCharsObj = arr.reduce((accumulator, currentVal) => {
+        accumulator[currentVal] ? ++accumulator[currentVal] : accumulator[currentVal] = 1;
         return accumulator;
     }, {});
-    const mostRepeatedNumber = Object.keys(outputObj).find((key, i) => outputObj[key] == Math.max(...Object.values(outputObj)))
+    console.log(repeatedCharsObj);
+    const mostRepeatedNumber = Object.keys(repeatedCharsObj).find((key) => repeatedCharsObj[key] == Math.max(...Object.values(repeatedCharsObj)))
     return mostRepeatedNumber;
 }
 
-// console.log(logRepeats(repeatedArray));
+// console.log(logMostRepeatedChar(repeatedNumbers));
 
 // ***************************************// End //************************************** //
 // Problem
@@ -240,19 +249,6 @@ function findMissingNumbers(sortedArray){
 }
 
 // console.log(findMissingNumbers(oneToTen))
-
-// ***************************************// End //************************************** //
-// Problem
-// Swapping two variables without using 3rd variable
-
-let a = 10;
-let b  = 15;
-
-// Answer
-a = a+b
-b = a - b
-a = a - b
-// console.log(a, b)
 
 // ***************************************// End //************************************** //
 // Problem

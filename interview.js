@@ -23,8 +23,21 @@
     // 3. 'Timeout promise'  
     // Explanation: Promise is a micro task and setTimeout is a macro task, so promise will execute first.
 
+    Promise.resolve('message').then((m) => {
+        // console.log(m)
+    });
+    new Promise((resolve) => {
+        // console.log('m1');
+    })
+    // console.log('m');
+    
+    // Output => 
+    // 1. 'm1'  
+    // 2. 'm'  
+    // 3. 'message
+    // Explanation: console.log in Promise constructor gets logged immediately!
 
-    // // Question - 2: this scope question
+    // Question - 2: this scope question
 
     let obj = {
         name: 'Test',
@@ -785,7 +798,7 @@
 
     // Question 01 - Remove Duplicates and sort
     const duplicateIntArray = [4,2,6,8,2,1,4,6,9,8,3,2,5,8,4,1,4,6];
-    function removeDuplicates(arr){
+    function removeDuplicates(arr) {
         const output = {};
 
         for(let i = 0; i < arr.length; i++){
